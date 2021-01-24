@@ -1,3 +1,6 @@
+server/spotify
+bundle.js
+
 # Logs
 logs
 *.log
