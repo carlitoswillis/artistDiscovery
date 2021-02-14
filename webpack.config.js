@@ -6,7 +6,7 @@ module.exports = {
   entry: './app/spotify.jsx',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public', 'artistDiscovery'),
+    path: path.resolve(__dirname, 'public'),
   },
   module: {
     rules: [

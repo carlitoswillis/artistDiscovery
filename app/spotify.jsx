@@ -5,7 +5,9 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import SearchArea from './components/searcharea';
 
-const $ = require('jquery');
+import $ from 'jQuery';
+
+
 
 class SpotifySearch extends Component {
   constructor(props) {
@@ -24,9 +26,25 @@ class SpotifySearch extends Component {
     e.preventDefault();
     e.stopPropagation();
     const { searchTerm } = this.state;
+    // var axios = require('axios');
+    // const config = {
+    //   method: 'get',
+    //   url: '/spotify?searchTerm=test',
+    //   headers: { }
+    // };
+
+    // axios(config)
+    // .then(function (response) {
+    //   this.setState({ results: response.data });
+    // })
+    // .catch(function (error) {
+    //   console.log(error);
+    // });
+
+
     if (searchTerm !== '') {
       const settings = {
-        url: `http://localhost:5000/spotify?searchTerm=${searchTerm}`,
+        url: `/spotify?searchTerm=${searchTerm}`,
         method: 'GET',
         timeout: 0,
       };
