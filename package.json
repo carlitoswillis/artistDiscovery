@@ -1,29 +1,28 @@
 {
-  "name": "youmightlike",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server",
+  "name": "artistdiscovery",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:dev": "webpack --watch",
-    "start": "nodemon server"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "author": "Carlitos Willis",
-  "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
-    "axios": "^0.21.1",
-    "babel-loader": "^8.2.2",
-    "css-loader": "^5.0.1",
-    "express": "^4.17.1",
-    "jquery": "^3.5.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "style-loader": "^2.0.0",
-    "webpack": "^5.17.0",
-    "webpack-cli": "^4.4.0",
-    "xmlhttprequest": "^1.8.0"
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
